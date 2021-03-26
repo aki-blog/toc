@@ -1,3 +1,25 @@
-.sub-contents{
-  padding-left: 22px;
+.contents-style{
+  text-align: left;
+  padding: 10px;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-style: solid;
+  display: table;
+  min-width: 50%;
+  background: #ffffff;
+  margin: 0 auto;
+}
+.contents-head{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+ol {
+  list-style: none;
+  counter-reset: number;
+}
+ol>li:before {
+  content: counters(number, '-') '. ';
+  counter-increment: number;
+  margin-left: -1.1em;
 }
